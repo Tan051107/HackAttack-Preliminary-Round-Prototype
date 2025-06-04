@@ -1,0 +1,43 @@
+# created by virtualenv automatically
+# === Python ===
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# === Virtual environments ===
+.env
+.env.*  # Optional: if using environment config files
+venv/
+.venv/
+
+# === Streamlit ===
+.streamlit/config.toml
+.streamlit/*.json
+.streamlit/*.log
+
+# === VS Code / PyCharm / IDEs ===
+.vscode/
+.idea/
+*.iml
+
+# === System files ===
+.DS_Store
+Thumbs.db
+
+# === Resume Uploads ===
+resumes/
+
+# === Parsed Data ===
+parsed_data/results.csv
+parsed_data/results.json
+parsed_data/saved_jobs.json
+jobs_data.csv
+skills.json
+
+# === Logs or temp ===
+*.log
+*.tmp

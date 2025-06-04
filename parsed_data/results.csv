@@ -1,0 +1,3 @@
+name,email,phone,skills,education_level,experience,filename,status,interview_date,interview_time,saved,company,job_id,job_title,application_date,fraud_score,suspicion_flag
+Alice Johnson,alice.johnson@gmail.com,1234567890,"Python, SQL",Bachelor's,Worked on backend APIs,alice_resume.pdf,Interview Invited,2025-05-31,23:01:00,True,IT Tech SDN BHD,414c74e7-3873-4566-97fc-a4494ab0eafd,Software Engineer,2025-05-31 10:00:00,0.0,False
+Tan Yik Yang,tanivan097@gmail.com,+60 10 828 0697,"javascript, Java",Diploma,Experience in making Quiz Website,20250602172939_Tan Yik Yang (CV).pdf,Applied,,,False,IT Tech SDN BHD,a6ad0520-d27e-4fe4-9563-6f48042ca4a5,Data Engineer,2025-06-02 17:29:39,,
