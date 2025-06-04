@@ -62,6 +62,7 @@ Add your secret keys in this format:
    
    SENDER_EMAIL_ADDRESS = "your email address"
    SENDER_EMAIL_PASSWORD = "your app password"
+  ```
 
 
 
