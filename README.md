@@ -2,34 +2,56 @@
 
 ## Overview
 
-This project is a prototype for the HackAttack Preliminary Round. It features a multi-company job board and applicant dashboard built with Python and Streamlit
+This project is a prototype for the HackAttack Preliminary Round. It features a multi-company job board and applicant dashboard built with Python and Streamlit.
 
 ### Prerequisites
 
-- Python 3.7 or higher  
-- Virtual environment tool (`venv` recommended)
+* Python 3.7 or higher
+* Virtual environment tool (`venv` recommended)
 
-### Installation
+## Installation
 
-1. Clone the repository:
+1.  **Clone the repository:**
 
-   ```bash
-   git clone https://github.com/Tan051107/HackAttack-Preliminary-Round-Prototype.git
-   cd HackAttack-Preliminary-Round-Prototype
+    ```bash
+    git clone [https://github.com/Tan051107/HackAttack-Preliminary-Round-Prototype.git](https://github.com/Tan051107/HackAttack-Preliminary-Round-Prototype.git)
+    cd HackAttack-Preliminary-Round-Prototype
+    ```
 
-2. Create and activate a virtual environment
- python -m venv .venv
-# On Windows
-.venv\Scripts\activate
-# On macOS/Linux
-source .venv/bin/activate
+2.  **Create and activate a virtual environment:**
 
-3. Install dependencies
-pip install -r requirements.txt
+    ```bash
+    python -m venv .venv
+    ```
 
-4. Usage
-To run the recruiter interface:
+    * **On Windows:**
+        ```bash
+        .venv\Scripts\activate
+        ```
+    * **On macOS/Linux:**
+        ```bash
+        source .venv/bin/activate
+        ```
+
+3.  **Install dependencies:**
+
+    Ensure you are in the project's root directory where `requirements.txt` is located, then run:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+### To run the Recruiter Interface:
+```bash
 streamlit run recruiter_interface.py
-
-To run the applicant interface:
+```
+### To run the Applicant Interface:
+```bash
 streamlit run applicant_interface.py
+```
+
+
+
+
