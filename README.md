@@ -56,7 +56,7 @@ streamlit run applicant_interface.py
 
 This project uses Streamlit’s `secrets.toml` file to store sender's email address and app password
 
-3. Add your secret keys in this format:
+Add your secret keys in this format:
 
    ```toml
    
