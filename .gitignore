@@ -16,7 +16,6 @@ venv/
 .venv/
 
 # === Streamlit ===
-.streamlit/config.toml
 .streamlit/*.json
 .streamlit/*.log
 
