@@ -60,7 +60,9 @@ This project uses Streamlit’s `secrets.toml` file to store sender's email addr
 
    ```toml
    
-   key = "your_secret_value"
+   SENDER_EMAIL_ADDRESS = "your email address"
+   SENDER_EMAIL_PASSWORD = "your app password"
+    ```
 
 
 
