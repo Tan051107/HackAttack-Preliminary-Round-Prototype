@@ -11,9 +11,19 @@ def load_data():
 # Define function to display applications
 def application_status():
     df = load_data()
-    applicant_rows = df[df['name'] == "Tan Yik Yang"]
 
     st.title("Application Status")
+
+    # Get unique names for selection
+    names = df['name'].dropna().unique()
+    if len(names) == 0:
+        st.warning("No applicant names found.")
+        return
+
+    selected_name = st.selectbox("Select your name", sorted(names))
+
+    # Filter rows for selected applicant
+    applicant_rows = df[df['name'] == selected_name]
 
     if not applicant_rows.empty:
         for idx, row in applicant_rows.iterrows():
@@ -24,15 +34,18 @@ def application_status():
                 "Company Applied To": row["company"]
             }
 
+            # Include interview info if applicable
             if str(row["status"]).strip().lower() == "interview invited":
-                data["Interview Date"] = row.get("interview_date", "N/A")
-                data["Interview Time"] = row.get("interview_time", "N/A")
+                data["Interview Date"] = row.get("interview_date") or "Not Scheduled"
+                data["Interview Time"] = row.get("interview_time") or "Not Scheduled"
 
             display_df = pd.DataFrame(data.items(), columns=["Field", "Value"])
-            st.subheader(f"Application #{idx + 1}")
-            st.table(display_df)
+
+            # Use expander for clean layout
+            with st.expander(f"{row['job_title']} at {row['company']}"):
+                st.table(display_df)
     else:
-        st.warning("No applications found.")
+        st.warning("No applications found for this applicant.")
 
+# Run the function
 application_status()
-

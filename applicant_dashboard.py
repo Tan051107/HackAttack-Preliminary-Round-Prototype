@@ -4,7 +4,7 @@ import os
 import re
 import json
 from datetime import datetime
-import fitz  # PyMuPDF
+import fitz
 from fuzzywuzzy import fuzz
 
 # --- Constants ---
