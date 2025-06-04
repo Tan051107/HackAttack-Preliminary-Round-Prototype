@@ -18,6 +18,7 @@ venv/
 # === Streamlit ===
 .streamlit/*.json
 .streamlit/*.log
+.streamlit/config.toml
 
 # === VS Code / PyCharm / IDEs ===
 .vscode/
